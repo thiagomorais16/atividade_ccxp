@@ -8,7 +8,6 @@ body{
 }
 header{
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: #FFD900;
     margin: 0px;
