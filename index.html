@@ -65,24 +65,44 @@
     </aside> 
     <footer>
     <div class="footer">
-        <div>
-            <img src="roxo.png" alt="quinta-feira">
-        </div>
-        <div>
-            <img src="rosa.png" alt="sexta-feira">
-
-        </div>
-        <div>
-            <img src="wellow.png" alt="esgotado">
-        </div>
-        <div>
-            <img src="verde.png" alt="domingo">
-        </div>
-    </div>
+        
+            <img src="roxo.png" 
+            onclick="selectCard ('#quinta')" 
+            onmouseover="highligthCard('#quinta')" 
+            onmouseout="highligthCard('#quinta')" 
+            id="quinta" alt=""
+            />
+            <img src="rosa.png" 
+            onclick="selectCard ('#sexta')" 
+            onmouseover="highligthCard('#sexta')" 
+            onmouseout="highligthCard('#sexta')" 
+            id="sexta" alt=""
+            />
+            <img src="wellow.png" 
+            onclick="selectCard ('#sabado')"
+            onmouseover="highligthCard('#sabado')" 
+            onmouseout="highligthCard('#sabado')" 
+            id="sabado" alt="" 
+            />
+        
+            <img src="verde.png" 
+            onclick="selectCard ('#domingo')" 
+            onmouseover="highligthCard('#domingo')" 
+            onmouseout="highligthCard('#domingo')" 
+            id="domingo" alt=""
+            />
+  </div>
     <div class="button">
-        <button type="button" onclick="alert('Deseja se Cadastrar!')"> GARANTA O SEU </button>
+        <button type="button" onclick="showSelectdCard()"> GARANTA O SEU </button>
     </div> 
     </footer>
+    <div>
+        <form action="https://www.google.com">
+            <input type="email" placeholder="seu email" required />
+            <input type="submit" />
+        </form>
+    </div>
 <script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
